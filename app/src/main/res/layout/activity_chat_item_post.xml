@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360px"
+    android:layout_height="800px"
+    tools:context=".chat_item_post">
+
+    <TextView
+        android:layout_width="37px"
+        android:layout_height="24px"
+        android:text="잡담"
+        android:textSize="20px"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:layout_marginTop="77px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_post_close3"
+        android:layout_width="35px"
+        android:layout_height="35px"
+        android:src="@drawable/close"
+        android:layout_marginLeft="309px"
+        android:layout_marginTop="56px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@null"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/text_write3"
+        android:layout_width="56px"
+        android:layout_height="24px"
+        android:text="글쓰기"
+        android:textSize="20px"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="138px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/post_photo3"
+        android:layout_width="33px"
+        android:layout_height="33px"
+        android:layout_marginTop="133px"
+        android:layout_marginLeft="298px"
+        android:src="@drawable/searchphoto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@null"
+        android:scaleType="fitCenter"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="328px"
+        android:layout_height="293px"
+        android:background="@drawable/button_round3"
+        android:orientation="vertical"
+        android:layout_marginTop="171px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <EditText
+            android:id="@+id/write_title3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="제목"
+            android:textSize="20px"
+            android:background="@null"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:layout_marginTop="26px"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="18px"
+            android:layout_marginRight="18px"
+            android:layout_marginTop="11px"
+            android:layout_marginBottom="18px"
+            android:background="@color/black" />
+
+        <EditText
+            android:id="@+id/write_content3"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:hint="내용"
+            android:textSize="20px"
+            android:background="@null"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:gravity="top|start" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/btn_save_post3"
+        android:layout_width="328px"
+        android:layout_height="44px"
+        android:text="완료"
+        android:textSize="20px"
+        android:textColor="@color/black"
+        android:background="@drawable/button_round3"
+        android:layout_marginTop="497px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="328px"
+    android:layout_height="71px"
+    android:layout_marginBottom="21px"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <CheckBox
+        android:layout_width="15px"
+        android:layout_height="15px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25px"
+        android:background="#D9D9D9"/>
+
+    <TextView
+        android:id="@+id/document_delete_name"
+        android:layout_width="162px"
+        android:layout_height="wrap_content"
+        android:text="서류 종류"
+        android:textSize="16px"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="13px"
+        android:layout_marginLeft="39px"
+        />
+    =
+    <TextView
+        android:id="@+id/document_delete_expiry_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YYYY.MM"
+        android:textSize="16px"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="37px"
+        android:layout_marginLeft="39px"
+        />
+
+    <ImageButton
+        android:id="@+id/document_delete_img"
+        android:layout_width="71px"
+        android:layout_height="71px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="252px"
+        android:src="@drawable/document_file"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

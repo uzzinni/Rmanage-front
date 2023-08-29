@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360px"
+    android:layout_height="800px"
+    tools:context=".NoticePostDetail">
+
+    <TextView
+        android:layout_width="74px"
+        android:layout_height="24px"
+        android:text="공지사항"
+        android:textSize="20px"
+        android:includeFontPadding="false"
+        android:layout_marginTop="77px"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_detail_back"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:src="@drawable/navigate_before"
+        android:layout_marginTop="66px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_notice_detail_menu"
+        android:layout_width="24px"
+        android:layout_height="24px"
+        android:src="@drawable/menupopup"
+        android:layout_marginTop="77px"
+        android:layout_marginLeft="320px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/notice_detail_title"
+        android:layout_width="295px"
+        android:layout_height="25px"
+        android:includeFontPadding="false"
+        android:text="TITLE"
+        android:textColor="@color/black"
+        android:textSize="20px"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="127px"
+        android:layout_marginStart="31px"
+        />
+
+    <LinearLayout
+        android:layout_width="295px"
+        android:layout_height="25px"
+        android:layout_marginTop="177px"
+        android:layout_marginLeft="29px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0">
+
+        <TextView
+            android:id="@+id/post_detail_date"
+            android:layout_width="100px"
+            android:layout_height="20px"
+            android:text="YYYY.MM.DD"
+            android:textSize="16px"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"
+            android:layout_marginRight="5px" />
+
+        <TextView
+            android:id="@+id/post_detail_time"
+            android:layout_width="45px"
+            android:layout_height="20px"
+            android:text="00:00"
+            android:textSize="16px"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:layout_width="3px"
+            android:layout_height="20px"
+            android:text="|"
+            android:textSize="16px"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"
+            android:layout_marginLeft="3px"/>
+
+        <TextView
+            android:layout_width="55px"
+            android:layout_height="20px"
+            android:layout_marginLeft="5px"
+            android:text="작성자:"
+            android:includeFontPadding="false"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16px" />
+
+        <TextView
+            android:id="@+id/notice_detail_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4px"
+            android:includeFontPadding="false"
+            android:text="USER123"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16px"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="328px"
+        android:layout_height="1px"
+        android:background="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="208px"
+        android:layout_marginLeft="16px"/>
+
+    <TextView
+        android:id="@+id/notice_detail_content"
+        android:layout_width="314px"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="224px"
+        android:layout_marginLeft="23px"
+        android:text="글 내용입니다."
+        android:textSize="20px"
+        android:textColor="@color/black"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="328px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="319px"
+        android:layout_marginLeft="16px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="330px"
+            android:layout_height="26px"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+
+            <ImageView
+                android:layout_width="26px"
+                android:layout_height="26px"
+                android:src="@drawable/post_like" />
+
+            <TextView
+                android:id="@+id/notice_detail_like_number"
+                android:layout_width="12px"
+                android:layout_height="20px"
+                android:text="0"
+                android:textSize="20px"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="21px"
+                android:layout_height="21px"
+                android:src="@drawable/post_chat_img"
+                android:layout_marginLeft="14px"/>
+
+            <TextView
+                android:id="@+id/notice_detail_comment_number"
+                android:layout_width="12px"
+                android:layout_height="20px"
+                android:text="0"
+                android:textSize="20px"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5px" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="328px"
+            android:layout_height="1px"
+            android:background="#000000"
+            android:layout_marginTop="36px"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notice_comments_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_marginTop="38px"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            tools:listitem="@layout/commentitemview"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="328px"
+        android:layout_height="44px"
+        android:background="@drawable/button_round2"
+        android:layout_marginTop="620px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/write_comment"
+            android:layout_width="265px"
+            android:layout_height="wrap_content"
+            android:hint="댓글을 입력하세요"
+            android:textSize="20px"
+            android:background="@null"
+            android:layout_marginLeft="16px"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/btn_notice_send_comment"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:src="@drawable/sendcomment"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
