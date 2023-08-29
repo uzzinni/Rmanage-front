@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360px"
+    android:layout_height="800px">
+
+
+    <!-- 여기에 달력을 나타낼 커스텀 뷰 또는 기타 UI 요소를 추가합니다. -->
+    <!-- 예시로 TextView를 사용하여 년/월을 표시합니다. -->
+    <TextView
+        android:id="@+id/yearMonthTextView"
+        android:layout_width="99px"
+        android:layout_height="38px"
+        android:layout_marginTop="128px"
+        android:layout_marginLeft="23px"
+        android:text="2023년 7월"
+        android:textColor="#000000"
+        android:textSize="20px"/>
+
+    <!-- 기타 커스텀 UI 요소를 추가합니다. -->
+    <!-- 예시로는 달력 날짜를 표시할 그리드뷰를 사용합니다. -->
+    <GridView
+        android:id="@+id/calendarGridView"
+        android:layout_width="328px"
+        android:layout_height="368px"
+        android:layout_below="@id/yearMonthTextView"
+        android:numColumns="7"/>
+
+
+</RelativeLayout>

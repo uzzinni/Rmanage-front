@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360px"
+    android:layout_height="800px"
+    tools:context=".DocumentPlus">
+
+    <TextView
+        android:layout_width="80px"
+        android:layout_height="24px"
+        android:text="서류 추가"
+        android:textSize="20px"
+        android:textColor="#000000"
+        android:includeFontPadding="false"
+        android:layout_marginTop="68px"
+        android:layout_marginStart="141px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    
+    <ImageButton
+        android:id="@+id/document_back4"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:layout_marginTop="60px"
+        android:layout_marginStart="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/navigate_before"
+        android:scaleType="fitCenter"
+        android:background="@null"/>
+
+    <TextView
+        android:layout_width="100px"
+        android:layout_height="20px"
+        android:text="서류 종류"
+        android:textSize="16px"
+        android:textColor="#000000"
+        android:includeFontPadding="false"
+        android:layout_marginTop="173px"
+        android:layout_marginStart="22px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:layout_width="100px"
+        android:layout_height="20px"
+        android:text="서류 유효기간"
+        android:textSize="16px"
+        android:textColor="#000000"
+        android:includeFontPadding="false"
+        android:layout_marginTop="273px"
+        android:layout_marginStart="22px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:layout_width="100px"
+        android:layout_height="20px"
+        android:text="이미지 추가"
+        android:textSize="16px"
+        android:textColor="#000000"
+        android:includeFontPadding="false"
+        android:layout_marginTop="373px"
+        android:layout_marginStart="22px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/document_bs1"
+        android:layout_width="32px"
+        android:layout_height="32px"
+        android:layout_marginTop="166px"
+        android:layout_marginStart="216px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/doc_check"
+        android:scaleType="fitCenter"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/document_text1"
+        android:layout_width="95px"
+        android:layout_height="24px"
+        android:text="서류 종류"
+        android:textSize="17px"
+        android:textColor="#000000"
+        android:includeFontPadding="false"
+        android:layout_marginTop="169px"
+        android:layout_marginStart="248px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/document_bs2"
+        android:layout_width="32px"
+        android:layout_height="32px"
+        android:layout_marginTop="266px"
+        android:layout_marginStart="216px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/doc_check"
+        android:scaleType="fitCenter"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/document_text2"
+        android:layout_width="95px"
+        android:layout_height="24px"
+        android:text="설정"
+        android:textSize="17px"
+        android:textColor="#000000"
+        android:includeFontPadding="false"
+        android:layout_marginTop="270px"
+        android:layout_marginStart="248px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/document_img"
+        android:layout_width="61px"
+        android:layout_height="61px"
+        android:layout_marginTop="351px"
+        android:layout_marginStart="224px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/searchphoto"
+        android:scaleType="fitCenter"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/btn_document_add2"
+        android:layout_width="328px"
+        android:layout_height="37px"
+        android:layout_marginStart="16px"
+        android:layout_marginTop="600px"
+        android:background="@drawable/button_round6"
+        android:text="서류 추가"
+        android:textSize="14px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

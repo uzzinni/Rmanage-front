@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360px"
+    android:layout_height="800px"
+    tools:context=".CommunityNotice">
+
+    <TextView
+        android:layout_width="74px"
+        android:layout_height="24px"
+        android:text="공지사항"
+        android:textSize="20px"
+        android:includeFontPadding="false"
+        android:layout_marginTop="77px"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:src="@drawable/navigate_before"
+        android:layout_marginTop="66px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        />
+
+    <Button
+        android:id="@+id/btn_write"
+        android:layout_width="86px"
+        android:layout_height="21px"
+        android:background="@drawable/button_round2"
+        android:text="글쓰기"
+        android:textSize="14px"
+        android:textColor="@color/black"
+        android:padding="0dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:layout_marginTop="111px"
+        android:layout_marginLeft="258px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notice_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="159px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/itemview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
