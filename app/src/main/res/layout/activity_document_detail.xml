@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360px"
+    android:layout_height="800px"
+    tools:context=".DocumentDetail">
+
+    <TextView
+        android:id="@+id/document_workplace_data"
+        android:layout_width="wrap_content"
+        android:layout_height="24px"
+        android:text="근무지 장소 데이터"
+        android:textSize="20px"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:layout_marginTop="71px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/btn_document_detail_back"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:src="@drawable/navigate_before"
+        android:layout_marginTop="56px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_document_detail_popup"
+        android:layout_width="24px"
+        android:layout_height="24px"
+        android:src="@drawable/menupopup"
+        android:layout_marginTop="71px"
+        android:layout_marginLeft="313px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_document_detail"
+        android:layout_width="328px"
+        android:layout_height="400px"
+        android:layout_marginTop="160px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/document_item"/>
+
+    <Button
+        android:id="@+id/btn_document_add1"
+        android:layout_width="328px"
+        android:layout_height="37px"
+        android:background="@drawable/button_round6"
+        android:text="서류 추가"
+        android:textSize="14px"
+        android:textColor="@color/black"
+        android:padding="0dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:layout_marginTop="600px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
