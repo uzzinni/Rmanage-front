@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Emailsend">
+
+    <TextView
+        android:id="@+id/passwordfind_main"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="@string/findpassword"
+        android:textSize="27sp"
+        android:textColor="#000000"
+        android:includeFontPadding="false"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/passwordfind_back"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/navigate_before"
+        android:contentDescription="TODO" />
+    
+    <View
+        android:id="@+id/next"
+        android:layout_width="328dp"
+        android:layout_height="233dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rectangle_06"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="287dp"
+        android:layout_height="66dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="319dp"
+        android:textColor="#000000"
+        android:text="@string/send"
+        android:textSize="24sp"
+        android:includeFontPadding="false"
+        android:gravity="center_horizontal|center_vertical"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
