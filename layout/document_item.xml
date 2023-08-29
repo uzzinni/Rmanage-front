@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="328px"
+    android:layout_height="71px"
+    android:layout_marginBottom="21px"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <TextView
+        android:id="@+id/document_name"
+        android:layout_width="162px"
+        android:layout_height="wrap_content"
+        android:text="서류 종류"
+        android:textSize="16px"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="13px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="유효기간: ~"
+        android:textSize="16px"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="37px"
+        />
+
+    <TextView
+        android:id="@+id/document_expiry_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YYYY.MM"
+        android:textSize="16px"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="37px"
+        android:layout_marginLeft="85px"
+        />
+
+    <ImageButton
+        android:layout_width="71px"
+        android:layout_height="71px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="252px"
+        android:src="@drawable/desk"
+        android:background="@drawable/rec"
+        android:scaleType="fitCenter"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

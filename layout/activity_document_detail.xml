@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360px"
+    android:layout_height="800px"
+    tools:context=".DocumentDetail">
+
+    <TextView
+        android:id="@+id/document_workplace_data"
+        android:layout_width="wrap_content"
+        android:layout_height="24px"
+        android:text="근무지 장소 데이터"
+        android:textSize="20px"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:layout_marginTop="71px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/btn_document_detail_back"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:src="@drawable/navigate_before"
+        android:layout_marginTop="56px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="328dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/document_item"/>
+
+    <Button
+        android:id="@+id/email_ok2"
+        android:layout_width="328dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/rectangle_4"
+        android:text="@string/docu"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
