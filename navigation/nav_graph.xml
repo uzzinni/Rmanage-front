@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- nav_graph.xml -->
+
+<!-- navigation_graph.xml -->
+
+<navigation xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="InvalidNavigation"
+    android:id="@+id/nav_bottom">
+
+    <fragment
+        android:id="@+id/bottomNavi"
+        android:name="com.example.mypage.BottomNavi"
+        android:label="BottomNavi" />
+
+    <activity
+        android:id="@+id/activity1"
+        android:name="com.example.mypage.Setting">
+        <!-- Activity1에 대한 설정 -->
+    </activity>
+
+    <activity
+        android:id="@+id/activity2"
+        android:name="com.example.mypage.Email">
+        <!-- Activity2에 대한 설정 -->
+    </activity>
+
+    <activity
+        android:id="@+id/activity3"
+        android:name="com.example.mypage.DocumentPlus">
+        <!-- Activity3에 대한 설정 -->
+    </activity>
+    <activity
+        android:id="@+id/activity4"
+        android:name="com.example.mypage.Alarm">
+        <!-- Activity4에 대한 설정 -->
+    </activity>
+    <activity
+        android:id="@+id/activity5"
+        android:name="com.example.mypage.MainActivity">
+        <!-- Activity5에 대한 설정 -->
+    </activity>
+    <!-- 각 아이템에 대한 액션 정의 -->
+    <action
+        android:id="@+id/action_bottomNavi_to_activity1"
+        app:destination="@id/activity1" />
+    <action
+        android:id="@+id/action_bottomNavi_to_activity2"
+        app:destination="@id/activity2" />
+    <action
+        android:id="@+id/action_bottomNavi_to_activity3"
+        app:destination="@id/activity3" />
+    <action
+        android:id="@+id/action_bottomNavi_to_activity4"
+        app:destination="@id/activity4" />
+    <action
+        android:id="@+id/action_bottomNavi_to_activity5"
+        app:destination="@id/activity5" />
+    <!-- ... -->
+</navigation>
